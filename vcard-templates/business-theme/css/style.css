@@ -1,0 +1,440 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #555555;
+    text-decoration: none;
+    background: linear-gradient(to right, var(--theme-color-1), var(--theme-color-0_5));
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+    background-color: var(--theme-color-1);
+    border-color: var(--theme-color-1);
+    transition: 0.3s filter;
+}
+
+.btn-primary.focus, .btn-primary:focus,.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem var(--theme-color-0_5);
+    border-color: var(--theme-color-1);
+}
+
+.btn-primary:hover {
+    filter: grayscale(10%);
+}
+
+.page-wrapper {
+    margin: 0 auto !important;
+    max-width: 450px;
+    padding: 15px 15px 28px;
+}
+
+.page-details {
+    background-position:top;
+    background-size: cover;
+    box-shadow: 1px 1px 25px 0px rgb(88 88 88 / 35%);
+    border-radius: 8px;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10%;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.hero-section.colored {
+    border: 7px solid #f5bc31;
+    box-shadow: inset 0px 0px 10px rgb(0 0 0 / 50%);
+}
+
+.hero-sub-section {
+    padding: 20px;
+    margin-top: -1px;
+}
+
+.hero-sub-section.colored {
+    background-color: #f5bc31;
+    color: #ffffff;
+}
+
+.hero-sub-section a:hover {
+    color: #fff !important;
+}
+
+
+.user-image {
+    text-align: left;
+}
+
+.user-status {
+    display: block;
+    color: white;
+    font-style: italic;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.user-image .logo-img {
+    width: 120px;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    margin-bottom: 15px;
+}
+
+.name {
+    margin: 10px 0 0;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+}
+.company-name {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.4px;
+}
+
+.line-separator-50 {
+    width: 50%;
+    background-color: var(--theme-color-1);
+    height: 2px;
+}
+
+.contact-action-container-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 30px;
+    line-height: 30px !important;
+    color: white;
+    background-color: var(--theme-color-1);
+    font-size: 13px;
+}
+
+.contact-action-container-text {
+    color: #F1F1F1;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-right: 10px;
+    display: inline-block;
+    word-break: break-word;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.contact-buttons {
+    /* background-color: rgba(244,244,244,0.4); */
+    margin: 0 -20px;
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.contact-button {
+    padding: 6px 10px;
+    border-radius: 50px;
+    min-width: 70px;
+    display: inline-block;
+    font-size: 12px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2), 0 0 40px rgba(255, 251, 251, 0.1) inset;
+    text-align: center;
+    background-color: #4489C4;
+    color: #fff;
+    border: none;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.contact-button i {
+    margin-right: 5px;
+}
+
+table {
+    border-collapse: inherit !important;
+}
+
+.contact-action-table {
+    -webkit-border-vertical-spacing: 10px;
+}
+
+/* Section CSS Starts */
+.section-header {
+    color: var(--theme-color-1);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.section-header-separator {
+    width: 70px;
+    background-color: var(--theme-color-1);
+    height: 2px;
+    margin-bottom: 20px;
+}
+
+.section-container {
+    text-align: left;
+    padding: 20px;
+    margin-top: 15px;
+    background-color: #F4F4F4;
+    line-height: 22px;
+    font-size: 14px;
+}
+
+.about-us-table {
+    font-size: 14px;
+    margin-top: 15px;
+    border-collapse: separate;
+    border-spacing: 0 5px;
+}
+
+.about-us-table tr {
+    text-align: -webkit-left;
+    vertical-align: top;
+}
+
+.about-us-table .table-row-label {
+    text-align: left;
+    min-width: 150px;
+    vertical-align: top;
+    position: relative;
+}
+
+.about-us-table .table-row-label .table-row-label-text {
+    display: inline-block;
+    margin: 0;
+    font-size: 14px;
+}
+
+.about-us-table .table-row-label .table-row-label-separator {
+    position: absolute;
+    right: 0;
+}
+
+.speciality-label {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.about-us-text {
+    text-align: justify;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+/************ CLOSE BUTTON **************/
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*********** SOCIAL SHARE BUTTON *************/
+.social-share-btn {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 60px;
+    margin: 0;
+}
+
+.social-share-btn .social-button {
+    padding: 4px;
+    list-style: none;
+}
+
+.social-share-btn .social-button i {
+    background-image: none;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    line-height: 1.1em;
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+    height: 40px;
+    width: 40px;
+    text-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-share-btn.inprofile {
+    padding: 0;
+    justify-content: flex-end;
+    margin: -4px;
+}
+
+.social-share-btn.inprofile .social-button {
+    padding: 3px;
+}
+
+.social-share-btn.inprofile .social-button i {
+    padding: 0;
+    height: 27px;
+    width: 27px;
+    font-size: 12px;
+    border-radius: 50%;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2), 0 0 40px rgba(255, 251, 251, 0.1) inset;
+}
+
+.btn-whatsapp {
+    background-color: #29a71a;
+}
+
+.btn-sms {
+    background-color: #1598d5;
+}
+
+.btn-facebook {
+    background-color: #3b5998;
+}
+
+.btn-twitter {
+    background-color: #2ba9e1;
+}
+
+.btn-skype {
+    background-color: #00aff0;
+}
+
+.btn-pinterest {
+    background-color: #cb2027;
+}
+
+.btn-linkedin {
+    background-color: #007bb6;
+}
+
+.btn-instagram {
+    background-color: #F18644;
+}
+
+.btn-youtube {
+    background-color: #E63631;
+}
+
+.btn-mail {
+    background-color: #939598;
+}
+/* Share Form in modal Completed*/
+
+
+/* Animations classes start */
+.fadeInUpBig {
+    -webkit-animation-name: fadeInUpBig;
+    animation-name: fadeInUpBig;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes fadeInUpBig {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 2000px, 0);
+        transform: translate3d(0, 2000px, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+@keyframes fadeInUpBig {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 2000px, 0);
+        transform: translate3d(0, 2000px, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/* Animations Classes Completed */
+
+
+/* Media query on Smaller Screens */
+@media only screen and (max-width: 450px){
+    .modal-content {
+        width: 100%;
+    }
+
+    .share-modal {
+        align-items: flex-end;
+    }
+}
+
+.list-style {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.orderedList {
+    list-style: decimal;
+    padding-left: 16px;
+}
+
+.unorderedList {
+    list-style: disc;
+    padding-left: 16px;
+}
+
+.add-to-contact-wrapper {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.vcard-branding {
+    margin-bottom: 20px;
+}
